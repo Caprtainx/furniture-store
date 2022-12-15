@@ -3,8 +3,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import NewOrderPage from '../NewFurnOrderPage/NewFurnOrderPage';
+import OrderHistoryPage from '../PurchaseHistoryPage/PurchaseHistoryPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());

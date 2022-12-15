@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './OrderHistoryPage.css';
+import './PurchaseHistoryPage.css';
 import * as ordersAPI from '../../utilities/orders-api';
 import Logo from '../../components/Logo/Logo';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
-import OrderDetail from '../../components/OrderDetail/OrderDetail';
+import OrderDetail from '../../components/FurnitureDetail/FurnitureDetail';
 import OrderList from '../../components/OrderList/OrderList';
 
 

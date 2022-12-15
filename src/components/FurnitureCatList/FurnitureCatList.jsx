@@ -1,4 +1,4 @@
-import './CategoryList.css';
+import './FurnitureCatList.css';
 
 export default function CategoryList({ categories, activeCat, setActiveCat }) {
   const cats = categories.map(cat =>
