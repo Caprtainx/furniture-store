@@ -1,5 +1,5 @@
 import './MenuList.css';
-import MenuListItem from '../MenuListItem/MenuListItem';
+import MenuListItem from '../FurnitureItemList/FurnitureItemList';
 
 export default function MenuList({ menuItems, handleAddToOrder }) {
   const items = menuItems.map(item =>
