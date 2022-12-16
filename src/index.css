@@ -119,8 +119,8 @@ input:focus {
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
-  color: var(--white);
-  background-color: var(--orange);
+  color: yellowgreen;
+  background-color: red;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
@@ -129,6 +129,11 @@ button, a.button {
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
+}
+
+button:hover, a.button:hover {
+  color: red;
+  background-color: yellowgreen;
 }
 
 button.btn-sm {
