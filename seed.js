@@ -27,7 +27,7 @@ const Item = require('./models/item');
     {name: 'Dining Set', emoji: '⑂', category: categories[2], price: 4.25},
     {name: 'Spoon', emoji: '🥄', category: categories[2], price: 4.25},
     {name: 'Fork and Knife Set', emoji: '🍴', category: categories[2], price: 8.45},
-    {name: 'Queen Bed', emoji: '🛏️', category: categories[3], price: 439.99,
+    {name: 'Queen Bed', emoji: '🛏️', category: categories[3], price: 439.99},
     {name: 'Broom', emoji: '🧹', category: categories[4], price: 5.69},
     {name: 'Plunger', emoji: '🪠', category: categories[4], price: 3.95},
     {name: 'Trash Can', emoji: '🗑️', category: categories[4], price: 15.45},
