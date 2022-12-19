@@ -16,8 +16,6 @@ export default function NewOrderPage({ user, setUser }) {
   const categoriesRef = useRef([]);
   const navigate = useNavigate();
 
-  // The empty dependency array causes the effect
-  // to run ONLY after the FIRST render
   useEffect(function() {
     async function getItems() {
       const items = await itemsAPI.getAll();

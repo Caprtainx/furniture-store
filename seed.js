@@ -19,19 +19,19 @@ const Item = require('./models/item');
 
   await Item.deleteMany({});
   const items = await Item.create([
-    {name: 'Wooden Kitchen Chair', emoji: '🪑', category: categories[0], price: 5.95},
-    {name: 'Office Chair', emoji: '💺', category: categories[0], price: 5.95},
-    {name: 'Wheel Chair', emoji: '🦽', category: categories[0], price: 5.95},
-    {name: 'Modern Sofa', emoji: '🛋️', category: categories[1], price: 25.95},
-    {name: 'Picture Frame', emoji: '🖼️', category: categories[1], price: 25.95},
-    {name: 'Dining Set', emoji: '🍽️', category: categories[2], price: 1.95},
-    {name: 'Spoon', emoji: '🥄', category: categories[2], price: 1.95},
-    {name: 'Fork and Knife Set', emoji: '🍴', category: categories[2], price: 1.95},
-    {name: 'Queen Bed', emoji: '🛏️', category: categories[3], price: 3.95},
-    {name: 'Broom', emoji: '🧹', category: categories[4], price: 3.95},
+    {name: 'Wooden Kitchen Chair', emoji: '🪑', category: categories[0], price: 65.89},
+    {name: 'Office Chair', emoji: '💺', category: categories[0], price: 86.21},
+    {name: 'Wheel Chair', emoji: '🦽', category: categories[0], price: 147.86},
+    {name: 'Modern Sofa', emoji: '🛋️', category: categories[1], price: 1450.99},
+    {name: 'Picture Frame', emoji: '🖼️', category: categories[1], price: 15.95},
+    {name: 'Dining Set', emoji: '⑂', category: categories[2], price: 4.25},
+    {name: 'Spoon', emoji: '🥄', category: categories[2], price: 4.25},
+    {name: 'Fork and Knife Set', emoji: '🍴', category: categories[2], price: 8.45},
+    {name: 'Queen Bed', emoji: '🛏️', category: categories[3], price: 439.99,
+    {name: 'Broom', emoji: '🧹', category: categories[4], price: 5.69},
     {name: 'Plunger', emoji: '🪠', category: categories[4], price: 3.95},
-    {name: 'Trash Can', emoji: '🗑️', category: categories[4], price: 3.95},
-    {name: 'Clay Pot', emoji: '🪴', category: categories[5], price: 3.95},
+    {name: 'Trash Can', emoji: '🗑️', category: categories[4], price: 15.45},
+    {name: 'Clay Pot', emoji: '🪴', category: categories[5], price: 3.99},
   ]);
 
   console.log(items)
