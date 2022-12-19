@@ -1,6 +1,6 @@
 import './FurnitureCatList.css';
 
-export default function CategoryList({ categories, activeCat, setActiveCat }) {
+export default function FurnitureCatList({ categories, activeCat, setActiveCat }) {
   const cats = categories.map(cat =>
     <li
       key={cat}

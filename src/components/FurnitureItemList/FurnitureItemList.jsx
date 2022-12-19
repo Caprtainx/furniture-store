@@ -1,13 +1,13 @@
 import './FurnitureItemList.css';
 
-export default function MenuListItem({ menuItem, handleAddToOrder }) {
+export default function FurnitureItemList({ furnitureItem, handleAddToOrder }) {
   return (
     <div className="MenuListItem">
-      <div className="emoji flex-ctr-ctr">{menuItem.emoji}</div>
-      <div className="name">{menuItem.name}</div>
+      <div className="emoji flex-ctr-ctr">{furnitureItem.emoji}</div>
+      <div className="name">{furnitureItem.name}</div>
       <div className="buy">
-        <span>${menuItem.price.toFixed(2)}</span>
-        <button className="btn-sm" onClick={() => handleAddToOrder(menuItem._id)}>
+        <span>${furnitureItem.price.toFixed(2)}</span>
+        <button className="btn-sm" onClick={() => handleAddToOrder(furnitureItem._id)}>
           ADD
         </button>
       </div>
