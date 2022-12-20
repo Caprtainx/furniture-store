@@ -13,6 +13,11 @@ export default function OrderList({ orders, activeOrder, setActiveOrder }) {
   return (
     <main className={`OrderList ${orders.length ? '' : 'no-orders'}`}>
       {orderList}
+    {/* <div>
+      <button className="btn btn-primary" onClick={() => handleDeleteOrder(orderList._id)}>
+        Delete
+      </button>
+    </div> */}
     </main>
   );
 }

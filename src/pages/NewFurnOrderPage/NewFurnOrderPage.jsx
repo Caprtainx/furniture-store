@@ -10,7 +10,7 @@ import FurnitureOrderDetail from '../../components/FurnitureOrderDetail/Furnitur
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 
 export default function NewOrderPage({ user, setUser }) {
-  const [menuItems, setMenuItems] = useState([]);
+  const [furnitureItems, setFurnitureItems] = useState([]);
   const [activeCat, setActiveCat] = useState('');
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
@@ -20,7 +20,7 @@ export default function NewOrderPage({ user, setUser }) {
     async function getItems() {
       const items = await itemsAPI.getAll();
       categoriesRef.current = [...new Set(items.map(item => item.category.name))];
-      setMenuItems(items);
+      setFurnitureItems(items);
       setActiveCat(categoriesRef.current[0]);
     }
     getItems();
@@ -47,7 +47,6 @@ export default function NewOrderPage({ user, setUser }) {
     navigate('/orders');
   }
 
-
   return (
     <main className="NewOrderPage">
       <aside>
@@ -61,7 +60,7 @@ export default function NewOrderPage({ user, setUser }) {
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       <FurnitureList
-        menuItems={menuItems.filter(item => item.category.name === activeCat)}
+        furnitureItems={furnitureItems.filter(item => item.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder}
       />
       <FurnitureOrderDetail

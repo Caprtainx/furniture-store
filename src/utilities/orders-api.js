@@ -21,3 +21,8 @@ export function checkout() {
 export function getAllForUser() {
   return sendRequest(`${BASE_URL}`);
 }
+
+// export function deleteCart() {
+//   return sendRequest(`${BASE_URL}/cart`, 'DELETE');
+// }
+

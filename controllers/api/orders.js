@@ -6,8 +6,14 @@ module.exports = {
   addToCart,
   setItemQtyInCart,
   checkout,
-  getAllForUser
+  getAllForUser,
+  // removeFromCart,
 };
+
+// async function removeFromCart(req, res){
+//   const order = await Order.findById(req.params.id);
+//   res.json(order);
+// }
 
 async function getAllForUser(req, res) {
   const orders = await Order.find({user: req.user._id, isPaid: true}).sort('-updatedAt');

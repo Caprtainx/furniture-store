@@ -1,11 +1,11 @@
 import './FurnitureList.css';
-import MenuListItem from '../FurnitureItemList/FurnitureItemList';
+import FurnitureListItem from '../FurnitureItemList/FurnitureItemList';
 
 export default function FurnitureList({ furnitureItems, handleAddToOrder }) {
   const items = furnitureItems.map(item =>
-    <MenuListItem
+    <FurnitureListItem
       key={item._id}
-      menuItem={item}
+      furnitureItem={item}
       handleAddToOrder={handleAddToOrder}
     />
   );

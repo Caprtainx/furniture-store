@@ -3,17 +3,24 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewFurnOrderPage/NewFurnOrderPage';
-import OrderHistoryPage from '../PurchaseHistoryPage/PurchaseHistoryPage';
+import NewFurnOrderPage from '../NewFurnOrderPage/NewFurnOrderPage';
+import PurchaseHistoryPage from '../PurchaseHistoryPage/PurchaseHistoryPage';
+// import * as ordersAPI from '../../utilities/orders-api'
 
 export default function App() {
   const [user, setUser] = useState(getUser());
+
+  // async function handleDeleteOrder(id) {
+  //   await ordersAPI.deleteCart(id);
+  //   const remainingOrderIds = order.filter(order => order.id !== id);
+  //   setOrderHistory(remainingOrderIds)
+  // }
   return (
     <main className="App">
       { user ?
         <Routes>
-          <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
-          <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
+          <Route path="/orders/new" element={<NewFurnOrderPage user={user} setUser={setUser} />} />
+          <Route path="/orders" element={<PurchaseHistoryPage user={user} setUser={setUser}/>} />
           <Route path="/*" element={<Navigate to="/orders/new" />} />
         </Routes>
         :

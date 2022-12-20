@@ -14,7 +14,8 @@ const Item = require('./models/item');
     {name: 'Utensils', sortOrder: 30},
     {name: 'Beds', sortOrder: 40},
     {name: 'Bathroom Utilities', sortOrder: 50},
-    {name: 'Misc', sortOrder: 60},
+    {name: 'Home Appliances/Electronics', sortOrder: 60},
+    {name: 'Misc', sortOrder: 70},
   ]);
 
   await Item.deleteMany({});
@@ -30,8 +31,9 @@ const Item = require('./models/item');
     {name: 'Queen Bed', emoji: '🛏️', category: categories[3], price: 439.99},
     {name: 'Broom', emoji: '🧹', category: categories[4], price: 5.69},
     {name: 'Plunger', emoji: '🪠', category: categories[4], price: 3.95},
-    {name: 'Trash Can', emoji: '🗑️', category: categories[4], price: 15.45},
-    {name: 'Clay Pot', emoji: '🪴', category: categories[5], price: 3.99},
+    {name: 'Plunger', emoji: '', category: categories[5], price: 3.95},
+    {name: 'Trash Can', emoji: '🗑️', category: categories[6], price: 15.45},
+    {name: 'Clay Pot', emoji: '🪴', category: categories[6], price: 3.99},
   ]);
 
   console.log(items)
