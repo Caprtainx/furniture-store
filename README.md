@@ -41,19 +41,21 @@ An E-commerce site where you can buy all the furniture you need!
 ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
 ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
+![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-05122A?style=flat&logo=jsonwebtokens)
 
 <details open>
   <h3>:link: Links</h3>
   <summary>Deployed Link</summary>
-  <a href="https://game-reviews-ben.herokuapp.com/">Video Game Reviews Site</a>
+  <a href="https://beenjamin-furniture-store.herokuapp.com/orders/new">Beenjamin's Furniture Store</a>
   <br>
-  <a href="https://trello.com/b/W9tSncxP/project-2">Trello Link</a>
+  <a href="https://trello.com/b/GA06cjYo/furniturestore">Trello Link</a>
 </details>
 
 ## :fast_forward: Next Steps
 
 ### Upcoming Features
 
-- [ ] Add an API for all games
-- [ ] Work on CSS for all pages
-- [ ] Add a search bar to search for reviews
+- [ ] Maybe pull from and api
+- [ ] Change some formating
+- [ ] Add different pictures
