@@ -1,4 +1,4 @@
-# <div id="description" align="center">
+<div id="description" align="center">
 
 # Beenjamin's Furniture Store
 
