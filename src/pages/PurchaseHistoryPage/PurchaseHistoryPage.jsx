@@ -21,6 +21,11 @@ export default function OrderHistoryPage({ user, setUser }) {
     getOrders();
   }, []);
 
+  async function handleDeleteOrder(orderId) {
+    const orders = await ordersAPI.deleteOrder(orderId);
+    setOrders(orders);
+  }
+
   return (
     <main className="OrderHistoryPage">
       <aside>
@@ -32,6 +37,7 @@ export default function OrderHistoryPage({ user, setUser }) {
         orders={orders}
         activeOrder={activeOrder}
         setActiveOrder={setActiveOrder}
+        handleDeleteOrder={handleDeleteOrder}
       />
       <FurnitureOrderDetail order={activeOrder} />
     </main>

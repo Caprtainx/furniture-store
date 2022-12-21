@@ -7,13 +7,14 @@ module.exports = {
   setItemQtyInCart,
   checkout,
   getAllForUser,
-  // removeFromCart,
+  deleteOrder,
 };
 
-// async function removeFromCart(req, res){
-//   const order = await Order.findById(req.params.id);
-//   res.json(order);
-// }
+async function deleteOrder(req, res){
+  await Order.findByIdAndDelete(req.params.id);
+  const orders = await Order.find({user: req.user._id, isPaid: true}).sort('-updatedAt');
+  res.json(orders);
+}
 
 async function getAllForUser(req, res) {
   const orders = await Order.find({user: req.user._id, isPaid: true}).sort('-updatedAt');

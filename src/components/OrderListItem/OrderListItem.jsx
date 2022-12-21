@@ -1,6 +1,7 @@
 import './OrderListItem.css';
 
-export default function OrderListItem({ order, activeOrder, setActiveOrder }) {
+export default function OrderListItem({ order, activeOrder, setActiveOrder, handleDeleteOrder }) {
+  
   return (
     <div
       className={`OrderListItem ${order === activeOrder ? 'selected' : ''}`}
@@ -14,6 +15,7 @@ export default function OrderListItem({ order, activeOrder, setActiveOrder }) {
         <div>${order.orderTotal.toFixed(2)}</div>
         <div className="smaller">{order.orderQty} Item{order.orderQty > 1 ? 's' : ''}</div>
       </div>
+      <button onClick={() => handleDeleteOrder(order._id)}>Delete</button>
     </div>
   );
 }

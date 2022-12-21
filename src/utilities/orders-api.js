@@ -2,27 +2,27 @@ import sendRequest from './send-request';
 
 const BASE_URL = '/api/orders';
 
-export function getCart() {
+export async function getCart() {
   return sendRequest(`${BASE_URL}/cart`);
 }
 
-export function addItemToCart(itemId) {
+export async function addItemToCart(itemId) {
   return sendRequest(`${BASE_URL}/cart/items/${itemId}`, 'POST');
 }
 
-export function setItemQtyInCart(itemId, newQty) {
+export async function setItemQtyInCart(itemId, newQty) {
   return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { itemId, newQty });
 }
 
-export function checkout() {
+export async function checkout() {
   return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
 }
 
-export function getAllForUser() {
+export async function getAllForUser() {
   return sendRequest(`${BASE_URL}`);
 }
 
-// export function deleteCart() {
-//   return sendRequest(`${BASE_URL}/cart`, 'DELETE');
-// }
+export async function deleteOrder(orderId) {
+  return sendRequest(`${BASE_URL}/${orderId}`, 'DELETE');
+}
 
