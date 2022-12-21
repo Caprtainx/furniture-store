@@ -10,11 +10,6 @@ import PurchaseHistoryPage from '../PurchaseHistoryPage/PurchaseHistoryPage';
 export default function App() {
   const [user, setUser] = useState(getUser());
 
-  // async function handleDeleteOrder(id) {
-  //   await ordersAPI.deleteCart(id);
-  //   const remainingOrderIds = order.filter(order => order.id !== id);
-  //   setOrderHistory(remainingOrderIds)
-  // }
   return (
     <main className="App">
       { user ?
